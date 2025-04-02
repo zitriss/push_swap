@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tlize <tlize@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/04/01 19:13:10 by tlize             #+#    #+#              #
-#    Updated: 2025/04/01 19:15:43 by tlize            ###   ########.fr        #
+#    Created: 2025/03/24 14:40:07 by tlize             #+#    #+#              #
+#    Updated: 2025/04/02 17:12:58 by tlize            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ RM = rm -f
 
 SRCS_DIR = src
 LIBFT_DIR = libft
-INCLUDES_DIR = includes
+INCLUDES_DIR = include
 
 SRCS = $(SRCS_DIR)/main.c
 OBJS = $(SRCS:.c=.o)
@@ -48,3 +48,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+

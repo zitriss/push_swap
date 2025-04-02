@@ -17,7 +17,7 @@ AR = ar rcs
 RM = rm -f
 
 SRCS_DIR = .
-LIBFT_DIR = libft
+LIBFT_DIR = ../libft
 
 SRCS = ft_printf.c ft_printfp.c ft_printfu.c ft_printfx.c ft_printfs.c \
 		ft_printfc.c ft_printfd.c

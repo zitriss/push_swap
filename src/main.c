@@ -6,7 +6,19 @@
 /*   By: tlize <tlize@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 19:16:42 by tlize             #+#    #+#             */
-/*   Updated: 2025/04/01 19:19:06 by tlize            ###   ########.fr       */
+/*   Updated: 2025/04/02 17:09:36 by tlize            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../include/push_swap.h"
+
+int	main(int argc, char **argv)
+{
+    t_node  *a;
+    t_node  *b;
+
+    a = NULL;
+    b = NULL;
+    if(argc == 1 || (argc == 2 && !argv[1][0]))
+        return (1);
+}
