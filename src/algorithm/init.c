@@ -6,7 +6,7 @@
 /*   By: tlize <tlize@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 03:45:48 by tlize             #+#    #+#             */
-/*   Updated: 2025/04/14 03:46:55 by tlize            ###   ########.fr       */
+/*   Updated: 2025/04/14 14:47:45 by tlize            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	init_stack_a(t_noeud **a, char **argv, char ***split_argv)
 	{
 		if (error_syntax(argv[i]))
 			free_errors(a, split_argv);
-		n = ft_atoi(argv[i]);
+		n = ft_atol(argv[i]);
 		if (n > INT_MAX || n < INT_MIN)
 			free_errors(a, split_argv);
 		if (error_duplicate(*a, (int)n))
