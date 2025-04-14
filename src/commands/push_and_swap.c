@@ -1,0 +1,50 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_and_swap.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tlize <tlize@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/14 03:32:20 by tlize             #+#    #+#             */
+/*   Updated: 2025/04/14 03:50:16 by tlize            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
+
+void	swap(t_noeud **head)
+{
+	if (!*head || !(*head)->next)
+		return ;
+	*head = (*head)->next;
+	(*head)->prev->prev = *head;
+	(*head)->prev->next = (*head)->next;
+	if ((*head)->next)
+		(*head)->next->prev = (*head)->prev;
+	(*head)->next = (*head)->prev;
+	(*head)->prev = NULL;
+}
+
+void	push(t_noeud **dst, t_noeud **src)
+{
+	t_noeud	*push_node;
+
+	if (!*src)
+		return ;
+	push_node = *src;
+	*src = (*src)->next;
+	if (*src)
+		(*src)->prev = NULL;
+	push_node->prev = NULL;
+	if (!*dst)
+	{
+		*dst = push_node;
+		push_node->next = NULL;
+	}
+	else
+	{
+		push_node->next = *dst;
+		push_node->next->prev = push_node;
+		*dst = push_node;
+	}
+}

@@ -46,7 +46,6 @@ clean:
 			rm -f $(OBJS)
 			@echo "$(YELLOW)Object files cleaned.$(NC)"
 
-# == Nettoyage complet ==
 fclean:		clean
 			rm -f $(NAME)
 			@echo "$(YELLOW)Library removed.$(NC)"
