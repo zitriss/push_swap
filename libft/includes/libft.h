@@ -6,7 +6,7 @@
 /*   By: tlize <tlize@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:24:42 by tlize             #+#    #+#             */
-/*   Updated: 2025/04/13 16:42:31 by tlize            ###   ########.fr       */
+/*   Updated: 2025/04/14 14:39:37 by tlize            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,6 @@ void	ft_putnbr_fd(int n, int fd);
 int		ft_putstr_fd(char *s, int fd);
 int		ft_printf(const char *format, ...);
 char	*get_next_line(int fd);
+long    ft_atol(const char *s);
 
 #endif
