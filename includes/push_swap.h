@@ -6,7 +6,7 @@
 /*   By: tlize <tlize@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 03:26:37 by tlize             #+#    #+#             */
-/*   Updated: 2025/04/14 03:57:38 by tlize            ###   ########.fr       */
+/*   Updated: 2025/04/14 15:01:30 by tlize            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 
 # include "libft.h"
 # include <stdbool.h>
-# include  <limits.h>
-
+# include <limits.h>
 
 typedef struct t_noeud
 {
